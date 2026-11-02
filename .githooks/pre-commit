@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fast checks before each commit. Full checks run in CI.
+set -euo pipefail
+make --no-print-directory check

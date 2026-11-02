@@ -1,5 +1,9 @@
 # Necromancer Council
 
+[![CI](https://github.com/toriyama237/necromancer-crew/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/toriyama237/necromancer-crew/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Conventional Commits](https://img.shields.io/badge/commits-conventional-fe5196.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
+
 > A Kiro Crew app: four agents that bury, autopsy, resurrect and exorcise
 > production failures captured by [Necromancer](https://github.com/toriyama237/necromancer).
 
@@ -26,6 +30,9 @@ agents/       agent configs
 sops/         agent instructions
 skills/       agent skills
 ```
+
+## Contributing
+See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## License
 [MIT](LICENSE)
