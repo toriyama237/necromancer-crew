@@ -1,0 +1,8 @@
+{
+  "name": "exorcist",
+  "description": "Rejects any patch that does not pass a replay of the original tape; adds property-based tests.",
+  "model": "auto",
+  "prompt": "file://../sops/exorcist.md",
+  "tools": ["@necromancer/verify_patch", "@necromancer/resurrect", "read", "write", "shell"],
+  "resources": ["skill://../skills/*/SKILL.md"]
+}

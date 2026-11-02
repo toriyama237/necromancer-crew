@@ -1,0 +1,38 @@
+{
+  "name": "necromancer-crew",
+  "version": "0.1.0",
+  "displayName": "Necromancer Council",
+  "description": "Four agents that bury, autopsy, resurrect and exorcise production failures captured by Necromancer.",
+  "author": "necromancer",
+  "license": "MIT",
+  "tags": ["incident", "on-call", "debugging", "replay", "legacy"],
+  "agents": [
+    "agents/gravedigger.json",
+    "agents/coroner.json",
+    "agents/necromancer.json",
+    "agents/exorcist.json"
+  ],
+  "skills": [
+    "skills/bury",
+    "skills/autopsy",
+    "skills/resurrect",
+    "skills/exorcise"
+  ],
+  "mcpServers": {
+    "necromancer": {
+      "command": "necro-mcp",
+      "args": []
+    }
+  },
+  "crons": [
+    {
+      "name": "night-of-the-living-graves",
+      "cron_expr": "0 3 * * *",
+      "message": "Replay every open grave against the latest build and report which ones now pass.",
+      "agent": "gravedigger"
+    }
+  ],
+  "platform": {
+    "os": ["linux", "macos"]
+  }
+}

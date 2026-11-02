@@ -1,0 +1,8 @@
+{
+  "name": "coroner",
+  "description": "Reads a tape, resurrects it and identifies the root cause from the first divergence.",
+  "model": "auto",
+  "prompt": "file://../sops/coroner.md",
+  "tools": ["@necromancer/get_tape", "@necromancer/resurrect", "@necromancer/diff_runs", "read", "grep"],
+  "resources": ["skill://../skills/*/SKILL.md"]
+}

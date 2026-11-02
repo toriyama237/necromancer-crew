@@ -1,0 +1,8 @@
+{
+  "name": "gravedigger",
+  "description": "Watches new deaths, deduplicates them into graves and prioritizes what to investigate.",
+  "model": "auto",
+  "prompt": "file://../sops/gravedigger.md",
+  "tools": ["@necromancer/list_graves", "@necromancer/get_tape"],
+  "resources": ["skill://../skills/*/SKILL.md"]
+}

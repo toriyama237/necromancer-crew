@@ -1,0 +1,8 @@
+{
+  "name": "necromancer",
+  "description": "Writes the smallest patch that addresses the root cause, in Rust or COBOL.",
+  "model": "auto",
+  "prompt": "file://../sops/necromancer.md",
+  "tools": ["read", "write", "grep"],
+  "resources": ["skill://../skills/*/SKILL.md"]
+}

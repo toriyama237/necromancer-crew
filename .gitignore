@@ -1,0 +1,4 @@
+node_modules/
+.env
+.env.*
+# NOTE: /.kiro must stay versioned. Never ignore it.
